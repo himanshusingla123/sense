@@ -1,0 +1,18 @@
+version: '1.0'
+steps:
+  - name: data_ingestion
+    script: data_ingestion.py
+  - name: data_preprocessing
+    script: data_preprocessing.py
+  - name: feature_engineering
+    script: feature_engineering.py
+  - name: model_training
+    script: model_training.py
+  - name: model_evaluation
+    script: model_evaluation.py
+  - name: model_deployment
+    script: model_deployment.py
+  - name: model_monitoring
+    script: model_monitoring.py
+  - name: model_retraining
+    script: model_retraining.py
